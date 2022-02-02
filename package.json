@@ -1,0 +1,23 @@
+{
+  "name": "kevinbthomson",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch:css": "postcss ./src/css/main.css --use postcss-import --output ./_site/css/styles.css --watch --map --verbose",
+    "watch:eleventy": "npx @11ty/eleventy --serve",
+    "build:css": "postcss ./_site/css/styles.css --use autoprefixer --use cssnano --output ./_site/css/styles.min.css",
+    "start": "npm run watch:eleventy & npm run watch:css"
+  },
+  "keywords": [],
+  "author": "@kevinbthomson",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "autoprefixer": "^10.4.1",
+    "cssnano": "^5.0.14",
+    "postcss-cli": "^9.1.0",
+    "postcss-import": "^14.0.2",
+    "postcss-preset-env": "^7.2.0"
+  }
+}
