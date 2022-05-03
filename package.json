@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch:css": "postcss ./src/css/main.css --use postcss-import --output ./_site/css/styles.css --watch --map --verbose",
+    "watch:css": "postcss ./src/css/main.css --use postcss-import --use postcss-nesting --output ./public/css/styles.css --watch --map --verbose",
     "watch:eleventy": "npx @11ty/eleventy --serve",
-    "build:css": "postcss ./_site/css/styles.css --use autoprefixer --use cssnano --output ./_site/css/styles.min.css",
+    "build:css": "postcss ./public/css/styles.css --use autoprefixer --use cssnano --output ./public/css/styles.min.css",
     "start": "npm run watch:eleventy & npm run watch:css"
   },
   "keywords": [],
@@ -18,6 +18,7 @@
     "cssnano": "^5.0.14",
     "postcss-cli": "^9.1.0",
     "postcss-import": "^14.0.2",
+    "postcss-nesting": "^10.1.2",
     "postcss-preset-env": "^7.2.0"
   }
 }

@@ -1,2 +1,7 @@
+@import '_variables';
 @import '_base';
 @import '_typography';
+@import '_layout';
+@import '_header';
+@import '_content';
+@import '_footer';
