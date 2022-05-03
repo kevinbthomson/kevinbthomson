@@ -1,0 +1,80 @@
+:root {
+  --color-primary: orange;
+  --color-heading-text: #333;
+  --color-links: orangered;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 16px;
+}
+body {
+  background-color: #f2f2f2;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+a {
+  color: var(--color-links);
+}
+main {
+}
+section {
+}
+article {
+}
+label {
+  user-select: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Merriweather', serif;
+}
+p {
+  margin: 1rem 0;
+  color: var(--color-primary);
+}
+p:last-child {
+  margin-bottom: 0;
+}
+.site-layout {
+  display: grid;
+  background-color: lime;
+  grid-template-rows: 60px 1fr 200px;
+  min-height: 100vh;
+}
+header.site-header {
+  align-items: center;
+  background-color: var(--color-primary);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem
+}
+header.site-header nav ul {
+      display: flex;
+      margin-left: auto;
+      list-style: none
+    }
+header.site-header nav ul li {
+        margin: 0 0 0 1rem
+      }
+header.site-header nav ul li a {
+          text-decoration: none;
+          color: white;
+        }
+#main-content {
+  margin: 1rem auto;
+  max-width: 80ch;
+  background: white;
+}
+footer.site-footer {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 1rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

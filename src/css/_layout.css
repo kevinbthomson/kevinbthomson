@@ -1,0 +1,6 @@
+.site-layout {
+  display: grid;
+  background-color: lime;
+  grid-template-rows: 60px 1fr 200px;
+  min-height: 100vh;
+}

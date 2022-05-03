@@ -1,0 +1,15 @@
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Merriweather', serif;
+}
+
+p {
+  margin: 1rem 0;
+  color: var(--color-primary);
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
