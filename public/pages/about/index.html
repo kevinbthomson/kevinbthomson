@@ -1,8 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>kevinbthomson - about</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,14 +16,17 @@
   <body>
     <div class="site-layout">
       <header class="site-header">
-kevinbthomson
-      <nav>
+  <a href="/">kevinbthomson</a>
+  <nav>
   <ul>
     <li>
-      <a href="/">Latest</a>
+      <a href="/">Home</a>
     </li>
     <li>
-      <a href="/about/">About</a>
+      <a href="/pages/blog/">Latest</a>
+    </li>
+    <li>
+      <a href="/pages/about/">About</a>
     </li>
   </ul>
 </nav>
@@ -39,5 +42,19 @@ kevinbthomson
       </main>
       <footer class="site-footer">@copyright 2022 kevinbthomson.com</footer>
     </div>
+
+    <script>
+      function print(val) {
+        console.log(val);
+      }
+
+      function useCallback(callback) {
+        callback('hello');
+      }
+
+      useCallback((value) => {
+        console.log(value);
+      });
+    </script>
   </body>
 </html>

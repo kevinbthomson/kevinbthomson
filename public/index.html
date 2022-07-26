@@ -1,8 +1,8 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>kevinbthomson - Home Page</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,45 +16,99 @@
   <body>
     <div class="site-layout">
       <header class="site-header">
-kevinbthomson
-      <nav>
+  <a href="/">kevinbthomson</a>
+  <nav>
   <ul>
     <li>
-      <a href="/">Latest</a>
+      <a href="/">Home</a>
     </li>
     <li>
-      <a href="/about/">About</a>
+      <a href="/pages/blog/">Latest</a>
+    </li>
+    <li>
+      <a href="/pages/about/">About</a>
     </li>
   </ul>
 </nav>
 </header>
       <main tabindex="-1" id="main-content">
         
-<h1>Home Page</h1>
-<p>Hello World</p>
 
-<section aria-labeledby="section-title">
-  <h2 id="section-title">Recent Posts</h2>
-  <ul>
-    
-    <li><a href="/posts/accessible-icon-buttons/">Accessible Icon Buttons</a></li>
-    
-    <li><a href="/posts/welcome/">Welcome to my blog</a></li>
-    
-  </ul>
-</section>
 
-<section aria-labeledby="section-title">
-  <h2 id="section-title">Pages</h2>
-  <ul>
-    
-    <li><a href="/pages/about/">about</a></li>
-    
-  </ul>
-</section>
+<div class="hero-banner" aria-hidden="true"></div>
 
+<div class="container">
+  <section>
+    <p>
+      Hi! 👋 I am a full-stack developer from Denver, Colorado. I'm
+      currently working on a React component library for a global tax
+      compliance software company: Sovos. I enjoy skiing, bicycling, hiking;
+      just about everything outdoors except maybe rattlesnakes 🐍 😀
+    </p>
+  </section>
+
+  <section aria-labeledby="section-title">
+    <h2 id="section-title">Recent Posts</h2>
+    <ul>
+  
+    <li>
+      <article>
+        <h3><a href="/posts/2022-06-20-accessible-icon-buttons/">Accessible Icon Buttons</a></h3>
+        <p>June 19, 2022</p>
+        <p>How do I make my icon buttons accessible? A title attribute? aria-label? What is the best practice?</p>
+      </article>
+    </li>
+  
+    <li>
+      <article>
+        <h3><a href="/posts/2022-06-20-welcome/">Welcome to my blog</a></h3>
+        <p>June 19, 2022</p>
+        <p>This is going to be the best blog ever!</p>
+      </article>
+    </li>
+  
+    <li>
+      <article>
+        <h3><a href="/posts/2022-07-26-dialog-as-drawer/">Dialog as drawer</a></h3>
+        <p>July 25, 2022</p>
+        <p>Can I use the html &lt;dialog&gt; element as a drawer?</p>
+      </article>
+    </li>
+  
+</ul>
+  </section>
+
+  <section aria-labeledby="section-title">
+    <h2 id="section-title">Pages</h2>
+    <ul>
+      
+        <li>
+          <a href="/pages/about/">about</a>
+        </li>
+      
+        <li>
+          <a href="/pages/blog/">blog</a>
+        </li>
+      
+    </ul>
+  </section>
+</div>
       </main>
       <footer class="site-footer">@copyright 2022 kevinbthomson.com</footer>
     </div>
+
+    <script>
+      function print(val) {
+        console.log(val);
+      }
+
+      function useCallback(callback) {
+        callback('hello');
+      }
+
+      useCallback((value) => {
+        console.log(value);
+      });
+    </script>
   </body>
 </html>

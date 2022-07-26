@@ -6,6 +6,11 @@ header.site-header {
   justify-content: space-between;
   padding: 1rem;
 
+  & a {
+    color: white;
+    text-decoration: none;
+  }
+
   & nav {
     & ul {
       display: flex;
