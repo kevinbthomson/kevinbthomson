@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>kevinbthomson - {{ title }}</title>
+    <title>kevinbthomson - Welcome to my blog</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,17 +11,32 @@
       href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="{{ '/css/styles.css' | url }}" />
-
-    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
     <div class="site-layout">
-      {% include "../partials/header.njk" %}
+      <header class="site-header">
+  <a href="/">kevinbthomson</a>
+  <nav>
+  <ul>
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <a href="/pages/blog/">Latest</a>
+    </li>
+    <li>
+      <a href="/pages/about/">About</a>
+    </li>
+  </ul>
+</nav>
+</header>
       <main tabindex="-1" id="main-content">
-        {{ content | safe }}
+        <h1>Welcome to my blog</h1>
+<p>These are my profound thoughts</p>
+
       </main>
-      {% include "../partials/footer.njk" %}
+      <footer class="site-footer">@copyright 2022 kevinbthomson.com</footer>
     </div>
 
     <script>
@@ -37,17 +52,5 @@
         console.log(value);
       });
     </script>
-
-    <script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>
   </body>
 </html>

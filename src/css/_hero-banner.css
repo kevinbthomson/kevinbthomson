@@ -1,0 +1,7 @@
+.hero-banner {
+  height: 400px;
+  background-color: gray;
+  background-image: url('/assets/images/mountains.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
