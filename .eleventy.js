@@ -4,6 +4,7 @@ module.exports = function (eleventyConfig) {
   // make sure we're watching for css changes in dev
   eleventyConfig.addWatchTarget('./src/css/');
   eleventyConfig.addPassthroughCopy('./src/assets');
+  eleventyConfig.addPassthroughCopy('./src/admin');
 
   eleventyConfig.addShortcode(
     'currentYear',
